@@ -20,7 +20,7 @@ body {
 
 /* ÁREA DOS CARDS */
 .page {
-  padding: 120px 30px 80px 30px;
+  padding: 120px 20px 80px 20px;
   display: flex;
   justify-content: center;
 }
@@ -28,21 +28,22 @@ body {
 /* CARDS PREMIUM */
 .container {
   display: flex;
-  gap: 35px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .card {
-  width: 310px;
-  padding: 40px;
+  width: 100%;
+  max-width: 330px;
+  padding: 32px;
   border-radius: 22px;
   background: rgba(255,255,255,0.04);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255,215,0,0.12);
   box-shadow: 0 0 25px rgba(255,215,0,0.10);
   text-align: center;
-  transition: 0.35s;
+  transition: .35s;
 }
 
 .card:hover {
@@ -51,23 +52,23 @@ body {
 }
 
 .titulo h1 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   color: #ffe28a;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .descricao {
   font-size: 15px;
   opacity: .85;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .preco {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
   color: #ffea9e;
-  margin: 25px 0;
+  margin: 26px 0;
   text-shadow: 0 0 8px rgba(255,215,0,0.3);
 }
 
@@ -81,7 +82,7 @@ body {
   font-weight: 600;
   display: block;
   font-size: 17px;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .btn:hover {
@@ -92,23 +93,48 @@ body {
 /* INSTAGRAM ÍCONE */
 .insta-float {
   position: fixed;
-  right: 22px;
-  bottom: 40px;
+  right: 18px;
+  bottom: 30px;
   z-index: 999;
   transition: .3s;
 }
+
 .insta-float:hover {
   transform: scale(1.15);
 }
+
 .insta-float img {
-  width: 55px;
-  height: 55px;
+  width: 53px;
+  height: 53px;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 900px) {
+/* RESPONSIVIDADE GERAL */
+@media (max-width: 600px) {
+
   .page {
-    padding-top: 140px;
+    padding-top: 90px;
+  }
+
+  .titulo h1 {
+    font-size: 20px;
+  }
+
+  .descricao {
+    font-size: 14px;
+  }
+
+  .preco {
+    font-size: 26px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .insta-float img {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -130,8 +156,8 @@ body {
     <div class="descricao">✔ Suporte Dedicado</div>
     <div class="descricao">✔ Legendas Simples</div>
     <div class="descricao">✔ 1 Revisão Gratuita</div>
-    <div class="descricao">✔ Ideal Para Quem Está Iniciando No Mundo Dos Vídeos E Quer Qualidade Sem Complicação</div>
-     <div class="descricao">✔ Entrega Rápida</div>
+    <div class="descricao">✔ Ideal Para Quem Está Iniciando No Mundo Dos Vídeos</div>
+    <div class="descricao">✔ Entrega Rápida</div>
     <div class="preco">R$ 135,00</div>
     <a class="btn" href="https://wa.me/5588994625094?text=Eu%20Quero%20O%20Plano%20Starter">Assinar</a>
   </div>
@@ -141,23 +167,23 @@ body {
     <div class="descricao">✔ 10 Vídeos Profissionais</div>
     <div class="descricao">✔ Suporte Premium</div>
     <div class="descricao">✔ Legendas Personalizadas</div>
-    <div class="descricao">✔ 2 Revisão Gratuita</div>
-    <div class="descricao">✔ Melhor Custo Para Quem Já Produz Conteúdo Regularmente</div>
+    <div class="descricao">✔ 2 Revisões Gratuitas</div>
+    <div class="descricao">✔ Melhor Para Quem Produz Conteúdo Sempre</div>
     <div class="descricao">✔ Entrega Rápida</div>
     <div class="preco">R$ 250,00</div>
     <a class="btn" href="https://wa.me/5588994625094?text=Eu%20Quero%20O%20Plano%20Pro">Assinar</a>
   </div>
 
   <div class="card">
-    <div class="titulo"><h1>Premium</h1></div>
+    <div sai de mais valioso class="titulo"><h1>Premium</h1></div>
     <div class="descricao">✔ 20 Vídeos Profissionais</div>
     <div class="descricao">✔ Suporte Prioritário</div>
     <div class="descricao">✔ Legendas de Alto Padrão</div>
     <div class="descricao">✔ Áudio Otimizado</div>
-    <div class="descricao">✔ 4 Revisão Gratuita</div>
-     <div class="descricao">✔ Ideal Para Criadores Que Querem Diferenciar O Conteúdo Da Concorrência</div>
-    <div class="descricao">✔ Prioridade Máxima Na Fila De Edição</div>
-        <div class="descricao">✔ Entrega Rápida</div>
+    <div class="descricao">✔ 4 Revisões Gratuitas</div>
+    <div class="descricao">✔ Ideal Para Criadores Que Querem Se Destacar</div>
+    <div class="descricao">✔ Prioridade Máxima</div>
+    <div class="descricao">✔ Entrega Rápida</div>
     <div class="preco">R$ 480,00</div>
     <a class="btn" href="https://wa.me/5588994625094?text=Eu%20Quero%20O%20Plano%20Premium">Assinar</a>
   </div>
