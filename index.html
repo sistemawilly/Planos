@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Planos</title>
+
+<!-- FONTE PREMIUM -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* ÁREA DOS CARDS */
+.page {
+  padding: 120px 30px 80px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARDS PREMIUM */
+.container {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 310px;
+  padding: 40px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,215,0,0.12);
+  box-shadow: 0 0 25px rgba(255,215,0,0.10);
+  text-align: center;
+  transition: 0.35s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(255,215,0,0.18);
+}
+
+.titulo h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffe28a;
+  margin-bottom: 15px;
+}
+
+.descricao {
+  font-size: 15px;
+  opacity: .85;
+  margin-bottom: 14px;
+}
+
+.preco {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffea9e;
+  margin: 25px 0;
+  text-shadow: 0 0 8px rgba(255,215,0,0.3);
+}
+
+/* BOTÃO PREMIUM */
+.btn {
+  background: linear-gradient(135deg, #c59d2b, #ffe07a);
+  padding: 14px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 12px;
+  font-weight: 600;
+  display: block;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,215,0,0.6);
+}
+
+/* INSTAGRAM ÍCONE */
+.insta-float {
+  position: fixed;
+  right: 22px;
+  bottom: 40px;
+  z-index: 999;
+  transition: .3s;
+}
+.insta-float:hover {
+  transform: scale(1.15);
+}
+.insta-float img {
+  width: 55px;
+  height: 55px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .page {
+    padding-top: 140px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- INSTAGRAM -->
+<a class="insta-float" href="https://instagram.com/SEU_USUARIO" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+</a>
+
+<div class="page">
+<div class="container">
+
+  <div class="card">
+    <div class="titulo"><h1>Starter</h1></div>
+    <div class="descricao">✔ 5 Vídeos Profissionais</div>
+    <div class="descricao">✔ Suporte Dedicado</div>
+    <div class="descricao">✔ Legendas Simples</div>
+    <div class="descricao">✔ 1 Revisão Gratuita</div>
+    <div class="descricao">✔ Ideal Para Quem Está Iniciando No Mundo Dos Vídeos E Quer Qualidade Sem Complicação</div>
+     <div class="descricao">✔ Entrega Rápida</div>
+    <div class="preco">R$ 135,00</div>
+    <a class="btn" href="https://wa.me/5588994625094?text=Eu%20Quero%20O%20Plano%20Starter">Assinar</a>
+  </div>
+
+  <div class="card">
+    <div class="titulo"><h1>Pro</h1></div>
+    <div class="descricao">✔ 10 Vídeos Profissionais</div>
+    <div class="descricao">✔ Suporte Premium</div>
+    <div class="descricao">✔ Legendas Personalizadas</div>
+    <div class="descricao">✔ 2 Revisão Gratuita</div>
+    <div class="descricao">✔ Melhor Custo Para Quem Já Produz Conteúdo Regularmente</div>
+    <div class="descricao">✔ Entrega Rápida</div>
+    <div class="preco">R$ 250,00</div>
+    <a class="btn" href="https://wa.me/5588994625094?text=Eu%20Quero%20O%20Plano%20Pro">Assinar</a>
+  </div>
+
+  <div class="card">
+    <div class="titulo"><h1>Premium</h1></div>
+    <div class="descricao">✔ 20 Vídeos Profissionais</div>
+    <div class="descricao">✔ Suporte Prioritário</div>
+    <div class="descricao">✔ Legendas de Alto Padrão</div>
+    <div class="descricao">✔ Áudio Otimizado</div>
+    <div class="descricao">✔ 4 Revisão Gratuita</div>
+     <div class="descricao">✔ Ideal Para Criadores Que Querem Diferenciar O Conteúdo Da Concorrência</div>
+    <div class="descricao">✔ Prioridade Máxima Na Fila De Edição</div>
+        <div class="descricao">✔ Entrega Rápida</div>
+    <div class="preco">R$ 460,00</div>
+    <a class="btn" href="https://wa.me/5588994625094?text=Eu%20Quero%20O%20Plano%20Premium">Assinar</a>
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>
